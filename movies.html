@@ -1,47 +1,109 @@
 <!DOCTYPE html>
 <html lang="sv">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Movies</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  </head>
 
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="movies.html">Movies</a></li>
-          <li><a href="series.html">Series</a></li>
-          <li><a href="music.html">Music</a></li>
-        </ul>
-      </nav>
-    </header>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card-body {
+            display: none;
+        }
+    </style>
 
-    <main>
-      <p>Film 1</p>
-      <p>Utgivningsår:</p>
-      <p>Skådespelare:</p>
-      <p>IMDB-länk:</p>
-      <p>Genre:</p>
+</head>
+<body class="bg-dark text-white">
 
-      <p>Film 2</p>
-      <p>Utgivningsår:</p>
-      <p>Skådespelare:</p>
-      <p>IMDB-länk:</p>
-      <p>Genre:</p>
+<header></header>
 
-      <p>Film 3</p>
-      <p>Utgivningsår:</p>
-      <p>Skådespelare:</p>
-      <p>IMDB-länk:</p>
-      <p>Genre:</p>
-    </main>
-    <footer>
-      <p>© 2026</p>
-    </footer>
-    <script src="init.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+<main class="container mt-5">
+
+    <h1 class="text-center mb-5">My faviorite movies</h1>
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="card bg-secondary text-white h-100">
+
+                <img src="images/interstellar.jpg"
+                     class="card-img-top img-fluid h-100"
+                     onclick="toggleMovieInfo(this)"
+                     style="cursor: pointer;">
+
+                <div class="card-body">
+
+                    <h2 class="h4">Interstellar</h2>
+
+                    <p><strong>Year:</strong> 2014</p>
+
+                    <p><strong>Genre:</strong> Sci-fi</p>
+
+                    <p>A very good movie about space and time. It’s exciting and has CGI</p>
+
+                    <a href="https://www.imdb.com/title/tt0816692/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_interstell" target="_blank" class="btn btn-warning btn-sm">IMDb</a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card bg-secondary text-white h-100">
+
+                <img src="images/bullet.jpg"
+                     class="card-img-top img-fluid h-100"
+                     onclick="toggleMovieInfo(this)"
+                     style="cursor: pointer;">
+
+                <div class="card-body">
+
+                    <h2 class="h4">Bullet Train</h2>
+
+                    <p><strong>Year:</strong> 2022</p>
+
+                    <p><strong>Genre:</strong> Action / Comedy</p>
+
+                    <p>A fun action movie with a lot of fighting and humor.</p>
+
+                    <a href="https://www.imdb.com/title/tt12593682/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_bullet%20trai" target="_blank" class="btn btn-warning btn-sm">IMDb</a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card bg-secondary text-white h-100">
+
+                <img src="images/fatherhood.jpg"
+                     class="card-img-top img-fluid h-60"
+                     onclick="toggleMovieInfo(this)"
+                     style="cursor: pointer;">
+
+                <div class="card-body">
+
+                    <h2 class="h4">Fatherhood</h2>
+
+                    <p><strong>Year:</strong> 2021</p>
+
+                    <p><strong>Genre:</strong> Drama / Comedy</p>
+
+                    <p>An movie about a father who raises his daughter by himself.</p>
+
+                    <a href="https://www.imdb.com/title/tt4733624/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_fatherhood" target="_blank" class="btn btn-warning btn-sm">IMDb</a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</main>
+
+<footer></footer>
+
+<script src="init.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
 </html>
